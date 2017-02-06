@@ -1,0 +1,18 @@
+{
+  "name": "d1-use-gulp-sass",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {},
+  "license": "MIT",
+  
+  "scripts": {
+    "start": "serve -p 8080",
+    "gulp": "gulp serve"
+  },
+  
+  "dependencies": {
+    "browser-sync": "^2.18.7",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

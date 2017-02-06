@@ -1,0 +1,90 @@
+// Partials
+// @import 'priceBox';
+// @import brings in the partial files. do not need to use the underscore or the scss. the system knows that partials have underscore and are scss. If you had them in a subfolder, it would be something like @import 'components/priceBox';
+
+// variables go at the top of the scss file. the $ is a placeholder. and now whenever you write $colorBlue, it will know what to apply.
+
+// can use double forward slash to start a comment. can label your styles this way.
+
+$colorBlue: #0000de;
+$backgroundImageHeader: url(../img/background.jpg);
+$colorBlueDarker: darken($colorBlue, 50%);
+// here you've told it to darken the first color by 50%
+// $columnWidth: 960px / 12 * 100;
+// can do math equations. this is called an operator.
+
+// partials could also be listed here. wherever you put it is where it gets included.
+
+// Globals
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    color: $colorBlue;
+    // anywhere you want to use it, you just use the variable.
+}
+
+// Classes
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+}
+//nesting
+
+.price-box {
+    border: 1px solid lightgray;
+
+    div:first-child {
+        background: $colorBlue;
+        color: white;
+        padding: 30px;
+
+        div:nth-child(2) {
+            font-size: 68px;
+        }
+    }
+}
+    
+    // span {
+
+//     }
+//     p {
+
+//     }
+//     // can apply things two ways . . . nest or can use button:hover. But if you have multiple styles to apply to button, use the nesting style.
+//     button {
+//         &:hover {
+
+//         }
+//     button:hover {
+
+//     }
+//     }
+// }
+// the ampersand & refers to the style that it's nested in. So sub-styles for an element.
+
+//this is what we would have written, but you can have all of the price box things nested and indented within the one class, and it will create the style the way we would have written it in CSS:
+// .price-box {
+
+// }
+// // .price-box span {
+
+// // }
+
+// .price-box p {
+
+// }
+
+//Partiatls. can take all of the price-box related things and move it to the file just for price box stuff. This is good for big projects. Partials are each element of the file: top navigation, buttons, whatever, in separate files named with an underscore first. 
+// can have as many partials as you want. some of these giant places will have 100+ partials. If you have 100+ contributors, they can each be working on their own file. 
+
+

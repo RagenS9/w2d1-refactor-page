@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  color: #0000de;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+}
+
+.price-box {
+  border: 1px solid lightgray;
+}
+
+.price-box div:first-child {
+  background: #0000de;
+  color: white;
+  padding: 30px;
+}
+
+.price-box div:first-child div:nth-child(2) {
+  font-size: 68px;
+}
