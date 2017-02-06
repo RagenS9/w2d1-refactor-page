@@ -1,3 +1,18 @@
+$backgroundImageHeader: url(../img/backgroundc.jpg);
+$colorWhiteSand: rgb(255, 255, 255);
+$colorGreenA9: rgba(64, 131, 61, .9);
+$colorBlueA9: rgba(32, 52, 116, .9);
+$colorBlack: black;
+$colorBlackA5: rgba(0, 0, 0, .5);
+$colorBlackA6: rgba(0, 0, 0, .6);
+$colorBlackA7: rgba(0, 0, 0, .7);
+$colorBlackA9: rgba(14, 14, 14, .9);
+$colorWhite: white;
+$colorWhiteA5: rgba(255, 255, 255, 0.5);
+$colorWhiteA8: rgba(255, 255, 255, .8);
+$colorGray: rgb(215, 215, 215);
+$colorGrayA8: rgba(215, 215, 215, .8);
+
 * {
     box-sizing: border-box;
 }
@@ -6,23 +21,22 @@ img {
     width: 100%;
 }
 .navContainer {
-    background-color: rgb(255, 255, 255);
+    background-color: $colorWhiteSand;
     font-size: 16.5px;
     letter-spacing: -0.5px;
 }
 
 .gen {
-    color:  rgba(0, 0, 0, .5);
-    margin-left: 10px;
+    color: $colorBlackA5
 }
 
 .specLogo {
-    color: rgba(0, 0, 0, .6);
+    color: $colorBlackA6;
     margin-right: 5px;
 }
 
 .specPrice {
-    color: black;
+    color: $colorBlack;
     margin-left: 15px;
 }
  
@@ -44,10 +58,10 @@ img {
     margin-right: 22px;
 }
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: $colorWhiteSand;
 }
 header {
-    background-image: url("../img/backgroundc.jpg");
+    background-image: $backgroundImageHeader;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -58,8 +72,8 @@ header {
     margin-left: 0;
     /*try changing margin left and right to auto*/
     margin-right: 0;
-    color: white;
-    text-shadow: 0px 2px 2px black;
+    color: $colorWhite;
+    text-shadow: 0px 2px 2px $colorBlack;
     text-align: center;
     font-size: 50px;
 }
@@ -79,61 +93,61 @@ header {
 
 .rowpriceType {
     font-size: 17px;
-    color: white;
+    color: $colorWhite;
     letter-spacing: 3px;
 }
 
 .rowpriceAmount {
     font-size: 100px;
-    color: white;
+    color: $colorWhite;
     font-weight: 300;
 }
 
 .rowpriceSchedule {
     font-size: 20px;
-    color: rgba(255, 255, 255, 0.5);
+    color: $colorWhiteA5; 
 }
 
 .price5Head {
-    background-color: rgba(64, 131, 61, .9);
+    background-color: $colorGreenA9;
     padding-top: 35px;
     padding-bottom: 37px;
 }
 .price25Head {
-    background-color: rgba(32, 52, 116, .9);
+    background-color: $colorBlueA9;
     padding-top: 35px;
     padding-bottom: 37px;
 }
 
 .price45Head {
-    background-color: rgba(14, 14, 14, .9);
+    background-color: $colorBlackA9; 
     padding-top: 35px;
     padding-bottom: 37px;
 }
 
 .priceDetails > div {
-    border-bottom: 1px solid rgba(215, 215, 215, .8);
-    border-right: 1px solid rgba(215, 215, 215, .8);
-    border-left: 1px solid rgba(215, 215, 215, .8);
+    border-bottom: 1px solid $colorGrayA8;
+    border-right: 1px solid $colorGrayA8;
+    border-left: 1px solid $colorGrayA8;
     text-align: center;
-    background-color: rgb(245, 245, 245);
+    background-color: $mainSoftWhite;
     padding: 10px; 
-    color: rgba(0, 0, 0, .7);
+    color: $colorBlackA7;
 }
 
 .priceChoose {
-    border-right: 1px solid rgba(215, 215, 215, .8);
-    border-bottom: 1px solid rgba(215, 215, 215, .8);
-    border-left: 1px solid rgba(215, 215, 215, .8);
+    border-right: 1px  solid $colorGrayA8;
+    border-bottom: 1px solid $colorGrayA8;
+    border-left: 1px solid $colorGrayA8;
     text-align: center;
-    background-color: rgb(255, 255, 255);
+    background-color: $colorWhiteSand;
     padding: 27px;
 }
 
 button {
     border-radius: 150px;
-    background-color: rgb(255, 255, 255);
-    border: 2px solid rgb(215, 215, 215);
+    background-color: $colorWhiteSand;
+    border: 2px solid $colorGray; 
     padding-top: 8px;
     padding-bottom: 8px;
     padding-right: 15px;
@@ -171,17 +185,17 @@ button {
 
 .infoP {
     line-height: 150%;
-    color: rgba(0, 0, 0, .7);
+    color: $colorBlackA7;
 }
 
 footer {
-    background-color: black;
-    color: rgba(255, 255, 255, .5);
+    background-color: $colorBlack;
+    color: $colorWhiteA5;
     padding: 27px;
     text-align: center;
 }
 
 .footerLink {
-    color: rgba(255, 255, 255, .8);
+    color: $colorWhiteA8;
     text-decoration: underline;
 }
