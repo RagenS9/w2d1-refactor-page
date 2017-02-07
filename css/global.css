@@ -25,6 +25,7 @@ nav ul :first-child {
 
 nav ul :nth-child(2) {
   color: rgba(0, 0, 0, 0.5);
+  margin-right: 5px;
 }
 
 nav ul :nth-child(3) {
@@ -128,9 +129,8 @@ button {
   padding-left: 15px;
 }
 
-.infoCol1 {
+.infoCol {
   max-width: 960px;
-  margin-top: 35px;
   margin-left: 13%;
   margin-right: 13%;
   display: flex;
@@ -143,21 +143,14 @@ button {
   text-align: left;
 }
 
-.infoCol2 {
-  max-width: 960px;
-  margin-left: 13%;
-  margin-right: 13%;
-  display: flex;
-}
-
-.infoHead {
+.infoRow div {
   letter-spacing: 4px;
   font-weight: 200;
   font-size: 20px;
   margin-bottom: 12px;
 }
 
-.infoP {
+.infoRow p {
   line-height: 150%;
   color: rgba(0, 0, 0, 0.7);
 }
@@ -169,7 +162,7 @@ footer {
   text-align: center;
 }
 
-.footerLink {
+footer span {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: underline;
 }

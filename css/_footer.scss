@@ -3,9 +3,10 @@ footer {
     color: $colorWhiteA5;
     padding: 27px;
     text-align: center;
+
+        span {
+        color: $colorWhiteA8;
+        text-decoration: underline;
+    }
 }
 
-.footerLink {
-    color: $colorWhiteA8;
-    text-decoration: underline;
-}
